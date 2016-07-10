@@ -13,7 +13,37 @@
         <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
             <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4DV-jN-MLa">
+                    <rect key="frame" x="176" y="216" width="249" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="249" id="Sfa-ue-5za"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="37T-Ef-hbW">
+                    <rect key="frame" x="176" y="276" width="249" height="30"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Igd-XR-wzm">
+                    <rect key="frame" x="270" y="336" width="60" height="30"/>
+                    <state key="normal" title="ログイン">
+                        <color key="titleColor" red="0.29803922772407532" green="0.29803922772407532" blue="0.29803922772407532" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                </button>
+            </subviews>
             <color key="backgroundColor" red="0.40000000596046448" green="0.80000001192092896" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="4DV-jN-MLa" firstAttribute="trailing" secondItem="37T-Ef-hbW" secondAttribute="trailing" id="VAe-Pp-gqR"/>
+                <constraint firstItem="4DV-jN-MLa" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="a70-Vs-zkQ"/>
+                <constraint firstItem="Igd-XR-wzm" firstAttribute="top" secondItem="37T-Ef-hbW" secondAttribute="bottom" constant="30" id="f5g-BN-8Y0"/>
+                <constraint firstItem="4DV-jN-MLa" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="216" id="k73-2T-EK8"/>
+                <constraint firstItem="4DV-jN-MLa" firstAttribute="centerX" secondItem="Igd-XR-wzm" secondAttribute="centerX" id="koE-yV-9eb"/>
+                <constraint firstItem="4DV-jN-MLa" firstAttribute="leading" secondItem="37T-Ef-hbW" secondAttribute="leading" id="yQM-l3-0ch"/>
+                <constraint firstItem="37T-Ef-hbW" firstAttribute="top" secondItem="4DV-jN-MLa" secondAttribute="bottom" constant="30" id="zo6-R3-YrK"/>
+            </constraints>
         </view>
     </objects>
 </document>
