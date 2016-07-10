@@ -16,6 +16,8 @@ class ViewController: UIViewController, UITextFieldDelegate{
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        emailField.delegate = self
+        passwordField.delegate = self
     }
 
     override func didReceiveMemoryWarning() {
@@ -23,7 +25,30 @@ class ViewController: UIViewController, UITextFieldDelegate{
         // Dispose of any resources that can be recreated.
     }
     
-    @IBAction func login(sender: AnyObject) {
+    @IBAction func login() {
+        resignFirstResponderAtControls()
         print("login")
+    }
+    
+    //リターンキーが押された時に発火するdelegate
+    func textFieldShouldReturn(textField: UITextField) -> Bool {
+        if (textField == emailField) {
+            //レシーバーのViewを最初に応答するオブジェクトとして設定する
+            passwordField?.becomeFirstResponder()
+        } else {
+            login()
+        }
+        return true
+    }
+    
+    //タップイベントを検知する
+    override func touchesBegan(touches: Set<UITouch>, withEvent event: UIEvent?) {
+        resignFirstResponderAtControls()
+    }
+    
+    private func resignFirstResponderAtControls() {
+        //表示しているキーボードを隠す
+        emailField?.resignFirstResponder()
+        passwordField?.resignFirstResponder()
     }
 }
