@@ -8,18 +8,20 @@
 
 /* Begin PBXBuildFile section */
 		E7C216261D321F3500FBA6A2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7C216251D321F3500FBA6A2 /* AppDelegate.swift */; };
-		E7C216281D321F3500FBA6A2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7C216271D321F3500FBA6A2 /* ViewController.swift */; };
 		E7C2162D1D321F3500FBA6A2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E7C2162C1D321F3500FBA6A2 /* Assets.xcassets */; };
 		E7C216301D321F3500FBA6A2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E7C2162E1D321F3500FBA6A2 /* LaunchScreen.storyboard */; };
+		E7C216391D32216000FBA6A2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7C216371D32216000FBA6A2 /* ViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		E7C2163A1D32216000FBA6A2 /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E7C216381D32216000FBA6A2 /* ViewController.xib */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		E7C216221D321F3500FBA6A2 /* SampleCustomTextField.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SampleCustomTextField.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E7C216251D321F3500FBA6A2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		E7C216271D321F3500FBA6A2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		E7C2162C1D321F3500FBA6A2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E7C2162F1D321F3500FBA6A2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E7C216311D321F3500FBA6A2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E7C216371D32216000FBA6A2 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ViewController.swift; path = ../ViewController.swift; sourceTree = "<group>"; };
+		E7C216381D32216000FBA6A2 /* ViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ViewController.xib; path = ../ViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,8 +54,9 @@
 		E7C216241D321F3500FBA6A2 /* SampleCustomTextField */ = {
 			isa = PBXGroup;
 			children = (
+				E7C216371D32216000FBA6A2 /* ViewController.swift */,
+				E7C216381D32216000FBA6A2 /* ViewController.xib */,
 				E7C216251D321F3500FBA6A2 /* AppDelegate.swift */,
-				E7C216271D321F3500FBA6A2 /* ViewController.swift */,
 				E7C2162C1D321F3500FBA6A2 /* Assets.xcassets */,
 				E7C2162E1D321F3500FBA6A2 /* LaunchScreen.storyboard */,
 				E7C216311D321F3500FBA6A2 /* Info.plist */,
@@ -120,6 +123,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E7C216301D321F3500FBA6A2 /* LaunchScreen.storyboard in Resources */,
+				E7C2163A1D32216000FBA6A2 /* ViewController.xib in Resources */,
 				E7C2162D1D321F3500FBA6A2 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -131,7 +135,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E7C216281D321F3500FBA6A2 /* ViewController.swift in Sources */,
+				E7C216391D32216000FBA6A2 /* ViewController.swift in Sources */,
 				E7C216261D321F3500FBA6A2 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
